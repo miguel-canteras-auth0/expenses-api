@@ -10,6 +10,8 @@ const {
   PORT,
 } = require("./env-config");
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
+
 const app = express();
 
 // Used to normalize URL in Vercel
